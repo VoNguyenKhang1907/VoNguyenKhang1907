@@ -1,0 +1,53 @@
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+local safePosition = Vector3.new(-72.00534057617188, 11.553956031799316, -119.14907836914062)
+ 
+-- Create the GUI
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = playerGui
+screenGui.Name = "TeleportGUI"
+ 
+local frame = Instance.new("Frame")
+frame.Parent = screenGui
+frame.Size = UDim2.new(0, 200, 0, 100)
+frame.Position = UDim2.new(0.5, -100, 0, 10)  -- Position it at the top center
+frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+frame.BackgroundTransparency = 0.5
+frame.BorderSizePixel = 0
+ 
+local button = Instance.new("TextButton")
+button.Parent = frame
+button.Size = UDim2.new(1, 0, 0.6, 0)  -- Resize the button to take up 60% of the frame
+button.Text = "Teleport to Safe Spot"
+button.TextSize = 20
+button.TextColor3 = Color3.fromRGB(255, 255, 255)
+button.BackgroundColor3 = Color3.fromRGB(0, 128, 255)
+button.BorderSizePixel = 0
+button.Font = Enum.Font.GothamBold
+ 
+-- Add "Made by Hecker" label
+local madeByLabel = Instance.new("TextLabel")
+madeByLabel.Parent = frame
+madeByLabel.Size = UDim2.new(1, 0, 0.4, 0)  -- Resize to take up the bottom 40%
+madeByLabel.Position = UDim2.new(0, 0, 0.6, 0)
+madeByLabel.Text = "Made by Hecker"
+madeByLabel.TextSize = 15
+madeByLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+madeByLabel.BackgroundTransparency = 1
+madeByLabel.Font = Enum.Font.Gotham
+ 
+-- Function to teleport the player and create the platform
+button.MouseButton1Click:Connect(function()
+    -- Teleport player to the safe spot
+    player.Character:SetPrimaryPartCFrame(CFrame.new(safePosition))
+ 
+    -- Create a platform under the player
+    local platform = Instance.new("Part")
+    platform.Size = Vector3.new(10, 1, 10)  -- A simple flat platform
+    platform.Position = safePosition - Vector3.new(0, 2, 0)  -- Position it just under the player
+    platform.Anchored = true
+    platform.CanCollide = true
+    platform.Material = Enum.Material.SmoothPlastic
+    platform.Color = Color3.fromRGB(100, 100, 100)
+    platform.Parent = workspace
+end)
