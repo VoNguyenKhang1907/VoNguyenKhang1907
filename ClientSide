@@ -1,0 +1,273 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Pannel = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.166168794, 0, 0.217315719, 0)
+MainFrame.Size = UDim2.new(0, 714, 0, 325)
+
+Pannel.Name = "Pannel"
+Pannel.Parent = MainFrame
+Pannel.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Pannel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Pannel.BorderSizePixel = 0
+Pannel.Size = UDim2.new(0, 714, 0, 41)
+
+TextLabel.Parent = Pannel
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.085434176, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 396, 0, 41)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Client Executor"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Pannel
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.661064446, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 41)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Other"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UICorner.Parent = Pannel
+
+TextButton.Parent = MainFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0140056023, 0, 0.818461537, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Execute"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_2.Parent = TextButton
+
+TextButton_2.Parent = MainFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.380952388, 0, 0.818461537, 0)
+TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Clear"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+UICorner_3.Parent = TextButton_2
+
+TextBox.Parent = MainFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0280112047, 0, 0.175384611, 0)
+TextBox.Size = UDim2.new(0, 437, 0, 197)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "--Add script here"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 20.000
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_4.Parent = TextBox
+
+TextButton_3.Parent = MainFrame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.684873939, 0, 0.20615384, 0)
+TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Esp"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+UICorner_5.Parent = TextButton_3
+
+TextButton_4.Parent = MainFrame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.684873939, 0, 0.467692316, 0)
+TextButton_4.Size = UDim2.new(0, 200, 0, 50)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Walkspeed"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
+UICorner_6.Parent = TextButton_4
+
+TextButton_5.Parent = MainFrame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.684873939, 0, 0.738461554, 0)
+TextButton_5.Size = UDim2.new(0, 200, 0, 50)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Noclip"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14.000
+TextButton_5.TextWrapped = true
+
+UICorner_7.Parent = TextButton_5
+
+UICorner_8.Parent = MainFrame
+
+-- Scripts:
+
+local function HSNGGT_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local button = script.Parent
+	local textbox = script.Parent.Parent.TextBox
+	button.MouseButton1Click:Connect(function()
+		loadstring(textbox.Text)() -- loadstring is broken in studio, dont worry
+	end)
+end
+coroutine.wrap(HSNGGT_fake_script)()
+local function IKTZ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local button = script.Parent
+	local textbox = script.Parent.Parent.TextBox
+	button.MouseButton1Click:Connect(function()
+		textbox.Text = ""
+	end)
+end
+coroutine.wrap(IKTZ_fake_script)()
+local function BSWGCQ_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local player = game.Players.LocalPlayer
+	local espEnabled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		espEnabled = not espEnabled
+		for _, plr in pairs(game.Players:GetPlayers()) do
+			if plr ~= player and plr.Character and plr.Character:FindFirstChild("Head") then
+				local head = plr.Character.Head
+				if espEnabled then
+					if not head:FindFirstChild("BillboardGui") then
+						local bb = Instance.new("BillboardGui", head)
+						bb.Size = UDim2.new(0, 100, 0, 40)
+						bb.AlwaysOnTop = true
+	
+						local label = Instance.new("TextLabel", bb)
+						label.Size = UDim2.new(1, 0, 1, 0)
+						label.Text = plr.Name
+						label.BackgroundTransparency = 1
+						label.TextColor3 = Color3.new(1, 0, 0)
+					end
+				else
+					if head:FindFirstChild("BillboardGui") then
+						head.BillboardGui:Destroy()
+					end
+				end
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(BSWGCQ_fake_script)()
+local function ZMTEXKB_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	local fast = false
+	local normalSpeed = 16
+	local fastSpeed = 50
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		fast = not fast
+		humanoid.WalkSpeed = fast and fastSpeed or normalSpeed
+	end)
+	
+	
+end
+coroutine.wrap(ZMTEXKB_fake_script)()
+local function MEMPZBN_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	local player = game.Players.LocalPlayer
+	local runService = game:GetService("RunService")
+	local noclip = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		noclip = not noclip
+	end)
+	
+	runService.Stepped:Connect(function()
+		if noclip and player.Character then
+			for _, part in pairs(player.Character:GetDescendants()) do
+				if part:IsA("BasePart") then
+					part.CanCollide = false
+				end
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(MEMPZBN_fake_script)()
+local function EUOZB_fake_script() -- MainFrame.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+end
+coroutine.wrap(EUOZB_fake_script)()
