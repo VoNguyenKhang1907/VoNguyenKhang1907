@@ -1,0 +1,198 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TopBar = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Execute = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Clear = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Code = Instance.new("TextBox")
+local UICorner_5 = Instance.new("UICorner")
+local Scanner = Instance.new("Frame")
+local Scanner_2 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.268878698, 0, 0.232962444, 0)
+MainFrame.Size = UDim2.new(0, 469, 0, 261)
+MainFrame.Visible = false
+
+UICorner.Parent = MainFrame
+
+TopBar.Name = "TopBar"
+TopBar.Parent = MainFrame
+TopBar.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+TopBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopBar.BorderSizePixel = 0
+TopBar.Size = UDim2.new(0, 469, 0, 47)
+
+UICorner_2.Parent = TopBar
+
+TextLabel.Parent = TopBar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.179104477, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 300, 0, 47)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Khg's hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Execute.Name = "Execute"
+Execute.Parent = MainFrame
+Execute.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0447761193, 0, 0.731800795, 0)
+Execute.Size = UDim2.new(0, 200, 0, 50)
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextScaled = true
+Execute.TextSize = 14.000
+Execute.TextWrapped = true
+
+UICorner_3.Parent = Execute
+
+Clear.Name = "Clear"
+Clear.Parent = MainFrame
+Clear.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.539445639, 0, 0.731800795, 0)
+Clear.Size = UDim2.new(0, 200, 0, 50)
+Clear.Font = Enum.Font.SourceSans
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clear.TextScaled = true
+Clear.TextSize = 14.000
+Clear.TextWrapped = true
+
+UICorner_4.Parent = Clear
+
+Code.Name = "Code"
+Code.Parent = MainFrame
+Code.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Code.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Code.BorderSizePixel = 0
+Code.Position = UDim2.new(0.0447761193, 0, 0.22605364, 0)
+Code.Size = UDim2.new(0, 432, 0, 117)
+Code.Font = Enum.Font.SourceSans
+Code.PlaceholderText = "-- Add script here"
+Code.Text = ""
+Code.TextColor3 = Color3.fromRGB(0, 0, 0)
+Code.TextSize = 20.000
+Code.TextXAlignment = Enum.TextXAlignment.Left
+Code.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_5.Parent = Code
+
+Scanner.Name = "Scanner"
+Scanner.Parent = ScreenGui
+Scanner.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Scanner.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scanner.BorderSizePixel = 0
+Scanner.Position = UDim2.new(0.271739125, 0, 0.203407511, 0)
+Scanner.Size = UDim2.new(0, 458, 0, 253)
+
+Scanner_2.Name = "Scanner"
+Scanner_2.Parent = Scanner
+Scanner_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Scanner_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scanner_2.BorderSizePixel = 0
+Scanner_2.Position = UDim2.new(0.0938864648, 0, 0.256917, 0)
+Scanner_2.Size = UDim2.new(0, 371, 0, 154)
+Scanner_2.Font = Enum.Font.SourceSans
+Scanner_2.Text = "Scan"
+Scanner_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scanner_2.TextScaled = true
+Scanner_2.TextSize = 14.000
+Scanner_2.TextWrapped = true
+
+UICorner_6.Parent = Scanner
+
+TextLabel_2.Parent = Scanner
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0327510908, 0, 0.0316205546, 0)
+TextLabel_2.Size = UDim2.new(0, 421, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Thg's Hub Scanner"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+-- Scripts:
+
+local function CYHIAG_fake_script() -- TopBar.LocalScript 
+	local script = Instance.new('LocalScript', TopBar)
+
+	local frame = script.Parent.Parent
+	frame.Active = true
+	frame.Draggable = true
+end
+coroutine.wrap(CYHIAG_fake_script)()
+local function QLRHINJ_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	local remote = game.ReplicatedStorage:WaitForChild("RemoteEvent")
+	script.Parent.MouseButton1Click:Connect(function()
+		local code = script.Parent.Parent.Code
+		remote:FireServer(code.Text)
+	end)
+end
+coroutine.wrap(QLRHINJ_fake_script)()
+local function BGLZV_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	local txt = script.Parent.Parent.Code
+	script.Parent.MouseButton1Click:Connect(function()
+		txt.Text = ""
+	end)
+end
+coroutine.wrap(BGLZV_fake_script)()
+local function PLXMS_fake_script() -- Scanner_2.LocalScript 
+	local script = Instance.new('LocalScript', Scanner_2)
+
+	local mainframe = script.Parent.Parent.Parent.MainFrame
+	local remote = game.ReplicatedStorage:WaitForChild("RemoteEvent")
+	local frame = script.Parent.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+		if remote then
+			mainframe.Visible = true
+			frame.Visible = false
+		end
+	end)
+end
+coroutine.wrap(PLXMS_fake_script)()
+local function OTGL_fake_script() -- Scanner.LocalScript 
+	local script = Instance.new('LocalScript', Scanner)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(OTGL_fake_script)()
