@@ -1,0 +1,154 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TopBar = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Execute = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Clear = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Code = Instance.new("TextBox")
+local UICorner_5 = Instance.new("UICorner")
+local Infyield = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.307017535, 0, 0.2764256, 0)
+MainFrame.Size = UDim2.new(0, 403, 0, 257)
+
+UICorner.Parent = MainFrame
+
+TopBar.Name = "TopBar"
+TopBar.Parent = MainFrame
+TopBar.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+TopBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopBar.BorderSizePixel = 0
+TopBar.Size = UDim2.new(0, 403, 0, 45)
+
+UICorner_2.Parent = TopBar
+
+TextLabel.Parent = TopBar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.156327546, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 278, 0, 45)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Client"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Execute.Name = "Execute"
+Execute.Parent = MainFrame
+Execute.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.188585609, 0, 0.719844341, 0)
+Execute.Size = UDim2.new(0, 151, 0, 50)
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextScaled = true
+Execute.TextSize = 14.000
+Execute.TextWrapped = true
+
+UICorner_3.Parent = Execute
+
+Clear.Name = "Clear"
+Clear.Parent = MainFrame
+Clear.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.580645144, 0, 0.719844341, 0)
+Clear.Size = UDim2.new(0, 151, 0, 50)
+Clear.Font = Enum.Font.SourceSans
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clear.TextScaled = true
+Clear.TextSize = 14.000
+Clear.TextWrapped = true
+
+UICorner_4.Parent = Clear
+
+Code.Name = "Code"
+Code.Parent = MainFrame
+Code.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Code.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Code.BorderSizePixel = 0
+Code.Position = UDim2.new(0.0471464023, 0, 0.217898831, 0)
+Code.Size = UDim2.new(0, 366, 0, 112)
+Code.Font = Enum.Font.SourceSans
+Code.Text = ""
+Code.TextColor3 = Color3.fromRGB(0, 0, 0)
+Code.TextSize = 14.000
+
+UICorner_5.Parent = Code
+
+Infyield.Name = "Inf yield"
+Infyield.Parent = MainFrame
+Infyield.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Infyield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Infyield.BorderSizePixel = 0
+Infyield.Position = UDim2.new(0.0297766756, 0, 0.719844341, 0)
+Infyield.Size = UDim2.new(0, 57, 0, 50)
+Infyield.Font = Enum.Font.SourceSans
+Infyield.Text = "Inf yield"
+Infyield.TextColor3 = Color3.fromRGB(255, 255, 255)
+Infyield.TextSize = 14.000
+Infyield.TextWrapped = true
+
+UICorner_6.Parent = Infyield
+
+-- Scripts:
+
+local function UPZK_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	local code = script.Parent.Parent.Code
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(code.Text)()
+	end)
+end
+coroutine.wrap(UPZK_fake_script)()
+local function LIOO_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	local code = script.Parent.Parent.Code
+	script.Parent.MouseButton1Click:Connect(function()
+		code.Text = ""
+	end)
+end
+coroutine.wrap(LIOO_fake_script)()
+local function SBGP_fake_script() -- Infyield.LocalScript 
+	local script = Instance.new('LocalScript', Infyield)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(SBGP_fake_script)()
+local function TRLEI_fake_script() -- MainFrame.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(TRLEI_fake_script)()
